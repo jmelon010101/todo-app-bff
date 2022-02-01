@@ -1,4 +1,4 @@
-package com.jmelon.rest.webservices.todorestfulwebservices;
+package com.jmelon.rest.webservices.todorestfulwebservices.helloworld;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
