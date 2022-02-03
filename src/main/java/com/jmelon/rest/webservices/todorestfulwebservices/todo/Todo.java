@@ -3,19 +3,25 @@ package com.jmelon.rest.webservices.todorestfulwebservices.todo;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 import java.util.Objects;
 
 @Getter
 @Setter
-public class Todo {
-    private int id;
+@Entity
+public  class Todo {
+    @Id
+    @GeneratedValue
+    private Long id;
     private String username;
     private String description;
     private boolean isCompleted;
     private Date targetDate;
 
-    public Todo(int id, String username, String description, boolean isCompleted, Date targetDate) {
+    public Todo(Long id, String username, String description, boolean isCompleted, Date targetDate) {
         this.id = id;
         this.username = username;
         this.description = description;
